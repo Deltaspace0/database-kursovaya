@@ -1,0 +1,13 @@
+drop table if exists obstacle;
+drop table if exists resource_patch;
+drop table if exists resource_type;
+drop table if exists map;
+drop table if exists unit_hero;
+drop table if exists hero_monologue;
+drop table if exists unit_monologue;
+drop table if exists hero;
+drop table if exists unit;
+drop table if exists building;
+drop table if exists damage;
+drop table if exists health;
+drop table if exists race;
