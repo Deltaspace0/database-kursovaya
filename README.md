@@ -69,6 +69,8 @@ _"Стороны конфликта представлены тремя игро
 ### Даталогическая модель
 ![](res/img/starcraft-types.drawio.png)
 
+### Визуализация БД в Intellij IDEA
+![](res/img/idea_visualization.png)
 
 ## Этап 3
 
