@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.building</OriginalElement>
+  <nodes>
+    <node x="11.093447660890135" y="237.92639362041484">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit_hero</node>
+    <node x="614.9797073267979" y="309.1760765550235">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.resource_patch</node>
+    <node x="354.12784032137324" y="484.94173989154706">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.building</node>
+    <node x="574.7297073267979" y="142.80261562998362">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.resource_type</node>
+    <node x="-125.21027487625923" y="528.5659823157895">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.race</node>
+    <node x="-434.9209506976505" y="234.44329952153146">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero_monologue</node>
+    <node x="142.55825015754488" y="496.3229201148325">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit_monologue</node>
+    <node x="160.05825015754488" y="23.488972248803634">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.health</node>
+    <node x="844.4078069202939" y="104.41371610845252">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.map</node>
+    <node x="160.05825015754488" y="187.4263936204148">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit</node>
+    <node x="165.27938934733754" y="-184.44844912280755">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.damage</node>
+    <node x="-180.11235821694478" y="170.92639362041484">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero</node>
+    <node x="833.4078069202939" y="309.1760765550235">0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.obstacle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.health" relationship="REFERENCES">
+      <point x="53.625" y="-126.5" />
+      <point x="285.1832501575449" y="275.2962679425838" />
+      <point x="350.85312222740913" y="275.2962679425838" />
+      <point x="350.85312222740913" y="138.45562105263141" />
+      <point x="221.55825015754488" y="138.45562105263141" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.building" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.health" relationship="REFERENCES">
+      <point x="61.06526443762948" y="-49.08366274960258" />
+      <point x="510.18823111306966" y="529.3580771419445" />
+      <point x="510.18823111306966" y="125.28553748006374" />
+      <point x="221.55825015754488" y="125.28553748006374" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.resource_patch" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.resource_type" relationship="REFERENCES">
+      <point x="-43.25" y="-82.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit_hero" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit" relationship="REFERENCES">
+      <point x="28.5" y="-38.0" />
+      <point x="96.59344766089013" y="426.83349282296615" />
+      <point x="-63.013715008231884" y="112.90709920255131" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.obstacle" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.map" relationship="REFERENCES">
+      <point x="0.0" y="-71.5" />
+      <point x="902.4078069202939" y="288.23548644338075" />
+      <point x="902.2460427432145" y="288.23548644338075" />
+      <point x="-0.16176417707936253" y="49.620535885166845" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.damage" relationship="REFERENCES">
+      <point x="-44.855271564947486" y="-70.44619631259977" />
+      <point x="-154.17240071871876" y="171.98019730781508" />
+      <point x="-154.17240071871876" y="-30.60983635087797" />
+      <point x="-18.545848820029278" y="71.33861277192958" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit_monologue" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit" relationship="REFERENCES">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.building" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.race" relationship="REFERENCES">
+      <point x="0.0" y="-93.5" />
+      <point x="425.62784032137324" y="637.9547468963315" />
+      <point x="-67.21027487625923" y="637.9547468963315" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.race" relationship="REFERENCES">
+      <point x="-17.875" y="-126.5" />
+      <point x="213.68325015754488" y="411.43767895374776" />
+      <point x="-37.491737077216214" y="411.43767895374776" />
+      <point x="-37.491737077216214" y="529.473306539074" />
+      <point x="-43.90161777897055" y="529.473306539074" />
+      <point x="-43.90161777897055" y="564.3147040765546" />
+      <point x="-67.21027487625923" y="564.3147040765546" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit_hero" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero" relationship="REFERENCES">
+      <point x="-11.897882508380818" y="26.748391961721723" />
+      <point x="-3.0734002070388016" y="302.67478558213656" />
+      <point x="-3.0734002070388016" y="302.3998088206695" />
+      <point x="65.84987010414619" y="59.973415200254635" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.race" relationship="REFERENCES">
+      <point x="23.59342624339692" y="67.0303102264752" />
+      <point x="-90.51893197354786" y="564.8974205039867" />
+      <point x="-67.21027487625923" y="564.8974205039867" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.resource_patch" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.map" relationship="REFERENCES">
+      <point x="43.25" y="-82.5" />
+      <point x="744.7297073267979" y="273.1760765550235" />
+      <point x="875.2954079744745" y="273.1760765550235" />
+      <point x="-27.112398945819336" y="54.71930462519873" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero_monologue" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero" relationship="REFERENCES">
+      <point x="0.0" y="-49.5" />
+      <point x="-343.9209506976505" y="302.2416828909215" />
+      <point x="-65.35344188095092" y="59.81528927050664" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.hero" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.health" relationship="REFERENCES">
+      <point x="31.327712125374575" y="-70.32175806060616" />
+      <point x="-82.78464609157021" y="133.06868159489528" />
+      <point x="221.55825015754488" y="133.06868159489528" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.building" relationship="REFERENCES">
+      <point x="17.875" y="-126.5" />
+      <point x="249.43325015754488" y="319.0" />
+      <point x="396.34583626777544" y="319.0" />
+      <point x="-29.282004053597802" y="87.17829711004697" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.unit" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.damage" relationship="REFERENCES">
+      <point x="-53.625" y="-126.5" />
+      <point x="177.93325015754488" y="297.55603547049446" />
+      <point x="445.3098395069044" y="297.55603547049446" />
+      <point x="445.3098395069044" y="-24.26142938437014" />
+      <point x="-40.60258774622946" y="77.68701973843741" />
+    </edge>
+    <edge source="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.building" target="0c7fcda2-7394-4c43-8795-5bd5407ea786.TABLE:studs.s311733.damage" relationship="REFERENCES">
+      <point x="60.60200487782083" y="-26.86177178947503" />
+      <point x="532.6650605101988" y="551.579968102072" />
+      <point x="532.6650605101988" y="-36.56840033173854" />
+      <point x="-16.7345228786059" y="65.38004879106902" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8786434977578493" showDependencies="false" x="192.03744445916118" y="249.6435087719281" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
