@@ -16,7 +16,7 @@ BEGIN
     RETURN QUERY
         SELECT *
         FROM unit
-        WHERE race_id = (SELECT race_id FROM race WHERE race_name = race_name_param);
+        WHERE unit.race_id = (SELECT race.race_id FROM race WHERE race_name = race_name_param);
 END;
 $$ LANGUAGE plpgsql;
 
@@ -38,7 +38,7 @@ BEGIN
     RETURN QUERY
         SELECT *
         FROM building
-        WHERE race_id = (SELECT race_id FROM race WHERE race_name = race_name_param);
+        WHERE building.race_id = (SELECT race.race_id FROM race WHERE race_name = race_name_param);
 END;
 $$ LANGUAGE plpgsql;
 
@@ -57,7 +57,7 @@ BEGIN
     RETURN QUERY
         SELECT *
         FROM hero
-        WHERE race_id = (SELECT race_id FROM race WHERE race_name = race_name_param);
+        WHERE hero.race_id = (SELECT race.race_id FROM race WHERE race_name = race_name_param);
 END;
 $$ LANGUAGE plpgsql;
 
