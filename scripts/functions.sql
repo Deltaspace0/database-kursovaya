@@ -27,6 +27,7 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION get_buildings_by_race(race_name_param text)
     RETURNS TABLE (
                       building_id int,
+                      building_name text,
                       health_id int,
                       damage_id int,
                       vespene_gas int,
@@ -65,8 +66,7 @@ $$ LANGUAGE plpgsql;
 
 
 -- Хранимая процедура для обновления здоровья юнита на основе полученного урона
-CREATE OR REPLACE PROCEDURE update_unit_health(target_unit_id INT, damage_value INT)
-    LANGUAGE plpgsql AS $$
+CREATE OR REPLACE PROCEDURE update_unit_health(target_unit_id INT, damage_value INT) AS $$
 BEGIN
     UPDATE unit
     SET health_id = health_id - damage_value
@@ -86,8 +86,7 @@ $$ LANGUAGE plpgsql;
 
 
 -- Хранимая процедура для создания препятствия на карте
-CREATE OR REPLACE PROCEDURE create_obstacle(target_obstacle_name TEXT, target_x INT, target_y INT, target_map_id INT)
-    LANGUAGE plpgsql AS $$
+CREATE OR REPLACE PROCEDURE create_obstacle(target_obstacle_name TEXT, target_x INT, target_y INT, target_map_id INT) AS $$
 BEGIN
     INSERT INTO obstacle (obstacle_name, x, y, map_id)
     VALUES (target_obstacle_name, target_x, target_y, target_map_id);
