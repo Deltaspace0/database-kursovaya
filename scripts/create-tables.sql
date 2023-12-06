@@ -39,7 +39,7 @@ create table unit(
     building_id int references building,
     vespene_gas int check (vespene_gas>0 and vespene_gas<=10000 or null),
     minerals int check (minerals>0 and minerals<=10000 or null),
-    supply int check (supply>0 and supply<=10000 or null),
+    supply int check (supply>=-10000 and supply<=10000 or null),
     race_id int not null references race
 );
 
