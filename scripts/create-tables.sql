@@ -85,8 +85,8 @@ create table resource_patch(
     map_id int not null references map,
     resource_type_id int not null references resource_type,
     quantity int not null check (quantity>0 and quantity<=10000),
-    x int not null check (x>=-5000 and x<=5000),
-    y int not null check (y>=-5000 and y<=5000)
+    x int not null check (x>=0 and x<=10000),
+    y int not null check (y>=0 and y<=10000)
 );
 
 create table obstacle(
