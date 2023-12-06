@@ -5,27 +5,27 @@ create table race(
 
 create table health(
     health_id serial primary key,
-    hitpoints int not null,
-    armor int,
-    shield int
+    hitpoints int not null check (hitpoints>=0 and hitpoints<=10000),
+    armor int check (armor>0 and armor<=10000 or null),
+    shield int check (shield>0 and shield<=10000 or null)
 );
 
 create table damage(
     damage_id serial primary key,
-    value int not null,
+    value int not null check (value>0 and value<=10000),
     splash boolean not null,
     ground boolean not null,
     air boolean not null,
-    range int not null
+    range int not null check (range>0 and range<=10000)
 );
 
 create table building(
     building_id serial primary key,
     health_id int not null references health,
     damage_id int references damage,
-    vespene_gas int,
-    minerals int,
-    supply int,
+    vespene_gas int check (vespene_gas>0 and vespene_gas<=10000 or null),
+    minerals int check (minerals>0 and minerals<=10000 or null),
+    supply int check (supply>0 and supply<=10000 or null),
     race_id int not null references race
 );
 
@@ -36,9 +36,9 @@ create table unit(
     health_id int not null references health,
     damage_id int references damage,
     building_id int references building,
-    vespene_gas int,
-    minerals int,
-    supply int,
+    vespene_gas int check (vespene_gas>0 and vespene_gas<=10000 or null),
+    minerals int check (minerals>0 and minerals<=10000 or null),
+    supply int check (supply>0 and supply<=10000 or null),
     race_id int not null references race
 );
 
@@ -71,8 +71,8 @@ create table unit_hero(
 create table map(
     map_id serial primary key,
     map_name text not null,
-    width int not null,
-    height int not null
+    width int not null check (width>0 and width<=10000),
+    height int not null check (height>0 and height<=10000)
 );
 
 create table resource_type(
@@ -84,9 +84,9 @@ create table resource_patch(
     resource_patch_id serial primary key,
     map_id int not null references map,
     resource_type_id int not null references resource_type,
-    quantity int not null,
-    x int not null,
-    y int not null
+    quantity int not null check (quantity>0 and quantity<=10000),
+    x int not null check (x>=-5000 and x<=5000),
+    y int not null check (y>=-5000 and y<=5000)
 );
 
 create table obstacle(
