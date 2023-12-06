@@ -140,3 +140,9 @@ insert into unit_hero values(13, 4);
 insert into unit_hero values(16, 5);
 insert into unit_hero values(19, 5);
 insert into unit_hero values(18, 6);
+
+insert into map(map_id, map_name, width, height) values(1, 'Lost Temple', 128, 128);
+insert into map(map_id, map_name, width, height) values(2, 'Luna,', 128, 128);
+insert into map(map_id, map_name, width, height) values(3, 'Python', 128, 128);
+insert into map(map_id, map_name, width, height) values(4, 'Destination', 128, 96);
+insert into map(map_id, map_name, width, height) values(5, 'Fighting Spirit', 128, 128);
