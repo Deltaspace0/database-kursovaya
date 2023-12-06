@@ -21,6 +21,7 @@ create table damage(
 
 create table building(
     building_id serial primary key,
+    building_name text not null,
     health_id int not null references health,
     damage_id int references damage,
     vespene_gas int check (vespene_gas>0 and vespene_gas<=10000 or null),
