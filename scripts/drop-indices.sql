@@ -1,0 +1,11 @@
+drop index building_idx;
+drop index unit_idx;
+drop index hero_idx;
+drop index map_idx;
+drop index obstacle_idx;
+drop index unit_health_id_idx;
+drop index unit_damage_id_idx;
+drop index resource_patch_map_id_idx;
+drop index resource_patch_resource_type_id_idx;
+drop index unit_monologue_unit_id_idx;
+drop index hero_monologue_hero_id_idx;
