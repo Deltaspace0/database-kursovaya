@@ -6,17 +6,17 @@ create table race(
 create table health(
     health_id serial primary key,
     hitpoints int not null check (hitpoints>=0 and hitpoints<=10000),
-    armor int check (armor>0 and armor<=10000 or null),
+    armor int check (armor>=0 and armor<=10000 or null),
     shield int check (shield>0 and shield<=10000 or null)
 );
 
 create table damage(
     damage_id serial primary key,
-    value int not null check (value>0 and value<=10000),
+    value int not null check (value>=0 and value<=10000),
     splash boolean not null,
     ground boolean not null,
     air boolean not null,
-    range int not null check (range>0 and range<=10000)
+    range int not null check (range>=0 and range<=10000)
 );
 
 create table building(
